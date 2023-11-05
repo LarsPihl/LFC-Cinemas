@@ -1,0 +1,57 @@
+body {
+    width: 100vw;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: calc(100vw/(16/9));
+
+}
+
+.header {
+    position: relative;
+}
+
+.header h1 {
+    position: absolute;
+    top: 0vh;
+    left: 1vw;
+}
+
+.posterDiv {
+    width: 95vw;
+    margin: 0vw 2.5vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 20%;
+}
+
+#posterName {
+    color: #FFFFFF;
+}
+
+#greenButton {
+    background-color: #3B8E74;
+    color: #FFFFFF;
+    border-radius: 15%;
+}
+
+#navBar {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: space-around;
+}
+
+.navbarItem {
+    margin-right: 1vw;
+}

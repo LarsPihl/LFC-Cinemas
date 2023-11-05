@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFC Cinemas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class = "hero">
+
+        <div class = "header">
+
+            <h1>Logo</h1>
+
+            <div id = navBar>
+                <nav>
+                    <a class = "navbarItem">Aktuella Filmer</a>
+                    <a class = "navbarItem">Erbjudanden</a>
+                    <a class = "navbarItem">Köp biljetter</a>
+                </nav>
+                <button class = "navbarItem">Mina sidor</button>
+                <button class = "navbarItem">Sök</button>
+                
+        </div>
+
+        </div><!--header-->
+
+        <div class = "posterDiv">
+
+            <button onclick = "changePoster(-1);"><</button>
+
+            <div id = "ticketButton">
+
+                <h1 id = posterName></h2>
+                    <button id = "greenButton">Köp Biljett ></button>
+
+            </div><!--</div>-->
+
+            <button onclick = "changePoster(1);">></button>
+
+        </div><!--posterName-->
+
+    </div><!--hero-->
+
+
+ 
+    <script src = "script.js"></script>
+</body>
+</html>
