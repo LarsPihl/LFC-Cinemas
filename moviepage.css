@@ -1,0 +1,67 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.page{
+}
+
+.poster{
+	height: 20vw;
+	width: 100vw;
+	object-fit: cover;
+	object-position: 0% 50%;
+}
+
+.sect1{
+	margin: 1.25vw 2.5vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.info{
+	width: 45vw;
+}
+
+.title{
+	margin: 0;
+	font-size: 4.25vw;
+}
+
+.genInfo{
+	font-size: 1.5vw;
+}
+
+.year{
+	padding-right: 0.5vw;
+	border-right: solid 0.125vw gray;
+}
+
+.genre{
+	padding-right: 0.5vw;
+	border-right: solid 0.125vw gray;
+}
+
+.age{
+}
+
+.studio{
+	margin: 1.75vw 0 1.25vw 0;
+	font-size: 2vw;
+}
+
+.credit{
+	margin: 1.25vw 0;
+	font-size: 1.25vw;
+}
+
+.trailer{
+	height: fit-content;
+	width: 45vw;
+	margin: 0 0 0 auto;
+}
+
+.desc{
+	margin: 3.75vw 2.5vw;
+	font-size: 1.5vw;
+}
