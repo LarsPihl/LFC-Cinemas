@@ -6,11 +6,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
+    color: #F3F3F3;
 
 }
 
 #wrapper {
-    margin-top: -10px;
     position: relative;
     width: inherit;
     text-align: center;
@@ -18,12 +18,13 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1;
+    background-color: #323232;
    
 }
 
 #logo {
     position: absolute;
-    top: 5vw;
+    top: 2vw;
     left: 8vw;
     z-index: 3;
 }
@@ -38,13 +39,14 @@ body {
     justify-content: center;
     z-index: 2;
     height: 267px;
+    border-bottom: 5px solid #3B8E74;
 }
 
 .header {
     width: inherit;
     max-width: inherit;
     position: fixed;
-    top: 0vh;
+    top: 3vh;
     left: 0px;
     display: flex;
     flex-direction: row;
@@ -66,42 +68,157 @@ body {
 #hamburgerIcon {
     visibility: visible;
     position: absolute;
-    top: 5vw;
-    right: 3vw;
+    top: 2vw;
+    right: 10vw;
     z-index: 3;
 }
 
 #posterName {
-    color: white;
+    margin-bottom: 1%;
 }
 
-      #hiddenMenu {
-        flex-wrap: wrap;
-        margin-top: 15%;
-        width: 100%;
-    background-color:#3B8E74;
+#hiddenMenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50vw;
+    background-color:#F3F3F3;
+    z-index: 4;
+    color: #323232;
+}
+
+#hiddenMenu nav{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#hiddenMenu button {
+    display: block;
+}
+
+#hiddenMenu a {
+margin: 2%;
+        
       }
 
-      #hiddenMenu nav{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        
-        
-      }
 
-      #hiddenMenu a {
-        margin: 2%;
-        
-      }
 
 
 .posterDiv {
-    width: 100%;
+    max-width: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.current {
+    max-width: inherit;
+    width: inherit;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieHeader {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-items: center;
     align-items: center;
+    margin-bottom: 10%;
+    
+}
+
+.line {
+    margin-top: -3%;
+}
+
+.current h2 {
+    font-size: 32px;
+    margin: 0vw 5vw;
+}
+
+.movieRow {
+    max-width: inherit;
+    width: inherit;
+    height: 267px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5%;
+}
+
+.movieRow .greenButton {
+    margin-top: -10%;
+}
+
+.posterAndName {
+    display: flex;
+    flex-direction: column;
+    width :167px;
+    height: 267px;
+    margin: 10px;
+}
+
+.poster {
+
+    width: 167px;
+    height: 245px;
+    border-radius: 5%;
+    border: 1px solid white;
+}
+
+
+.circles {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.circles img {
+    margin: 0.5vw;
+}
+
+#offers {
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: inherit;
+    width: inherit;
+    margin-bottom: 5%;
+}
+
+#erbjudande {
+    width: 85vw;
+    height: 245px;
+
+}
+
+p {
+    font-size: 16px;
+    width: 304px;
+}
+
+#studentOffer {
+    margin-top: 5%;
+    height: 360px;
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #474747;
 }
 
 @media screen and (min-width: 576px) {
@@ -143,7 +260,6 @@ body {
 #posterName {
     color: #FFFFFF;
 }
-
 
 
 #navBar {

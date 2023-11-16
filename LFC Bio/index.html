@@ -42,21 +42,74 @@
 
         <div class = "posterDiv">
 
-            <button class = "greenButton" onclick = "changePoster(-1);"><img src = "images/chevron-left.svg" alt = "Chevron left"></button>
-
-            <div id = "ticketButton">
-
                 <h1 id = posterName></h2>
                     <button class = "greenButton"><img src = "images/buyButton.svg"></button>
-
-            </div><!--</div>-->
-
-            <button class = "greenButton" onclick = "changePoster(1);"><img src = "images/chevron-right.svg" alt = "Chevron right"></button>
-
-        </div><!--posterName-->
+        </div><!--posterDiv-->
 
     </div><!--hero-->
 
+    <div class= "current">
+        <div class = "movieHeader">
+        <div class = "line">_______________</div><h2>Films</h2><div class="line">_______________</div>
+        </div>
+        <div class = "movieRow">
+        <button class = "greenButton" onclick = "changeCurrent(-1, posterh4, posterImage);"><img src = "images/chevron-left.svg" alt = "Chevron left"></button>
+        <div class = "posterAndName">
+            <img class = "poster currentPoster">
+            <h4 class = "posterh4 currenth4">Placeholder</h4>
+        </div>
+        <div class = "posterAndName">
+            <img class = "poster currentPoster">
+            <h4 class = "posterh4 currenth4">Placeholder</h4>
+        </div>
+        <button class = "greenButton" onclick = "changeCurrent(1, posterh4, posterImage);"><img src = "images/chevron-right.svg" alt = "Chevron right"></button>
+        </div><!--movieRow-->
+        <div class = "circles">
+        <img src = "images/circle.svg" alt = "Circle" onclick = "changeCurrent(-1, posterh4, posterImage);">
+        <img src = "images/circle.svg" alt = "Circle" onclick = "changeCurrent(1, posterh4, posterImage);">
+    </div>
+    </div><!--Current-->
+
+    <div class = "current" id = "offers">
+        <div class = "movieHeader">
+        <div class = "line">_______________</div><h2>Offers</h2><div class="line">_______________</div>
+        </div>
+        <div class = "movieRow">
+        <img id = "erbjudande" src = "images/erbjudanden.svg" alt = "Offers">
+    
+        </div><!--movieRow-->
+
+        <div id = "studentOffer">
+            <h2>Student Offer</h2>
+            <p>Buy 2 movie tickets simultaneously and get a large Popcorn and soda for free.<br><br>
+                The offer expires at 31/12-2023.
+            </p>
+            <img src = "images/readMore.svg" alt = "Read More">
+        </div>
+        
+    </div><!--offers-->
+
+    <div class= "current">
+        <div class = "movieHeader">
+        <div class = "line">_______________</div><h2>Coming Soon</h2><div class="line">_______________</div>
+        </div>
+        <div class = "movieRow">
+        <button class = "greenButton" onclick = "changeCurrent(-1, comingh4, comingPosterImage);"><img src = "images/chevron-left.svg" alt = "Chevron left"></button>
+        <div class = "posterAndName">
+            <img class = "poster comingPosterImage">
+            <h4 class = "posterh4 comingh4">Placeholder</h4>
+        </div>
+        <div class = "posterAndName">
+            <img class = "poster comingPosterImage">
+            <h4 class = "posterh4 comingh4">Placeholder</h4>
+        </div>
+        <button class = "greenButton" onclick = "changeCurrent(1, comingh4, comingPosterImage);"><img src = "images/chevron-right.svg" alt = "Chevron right"></button>
+        </div><!--movieRow-->
+        <div class = "circles">
+        <img src = "images/circle.svg" alt = "Circle" onclick = "changeCurrent(-1, comingh4, comingPosterImage);">
+        <img src = "images/circle.svg" alt = "Circle" onclick = "changeCurrent(1, comingh4, comingPosterImage);">
+    </div>
+    </div><!--current-->
 </div><!--Wrapper-->
 
 
