@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFC Cinemas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div id = "wrapper">
+
+    <div class = "hero">
+
+        <div class = "header">
+
+            <img id = "logo" src = "images/Logo.svg" alt = "LFC Bio">
+
+            <div id = "navBar">
+                <nav>
+                    <a class = "navbarItem">Aktuella Filmer</a>
+                    <a class = "navbarItem">Erbjudanden</a>
+                    <a class = "navbarItem">Köp biljetter</a>
+                </nav>
+                <button class = "navbarItem">Mina sidor</button>
+                <button class = "navbarItem">Sök</button>
+                
+            </div>
+
+        <div id = "hamburgerIcon">
+
+        <a href="javascript:void(0);" class="icon" onclick="document.getElementById('hiddenMenu').innerHTML = changeMenu();">
+           <img src = "images/hamburger.svg" alt = "Hamburger Menu">
+          </a>
+
+        </div>
+
+        </div><!--header-->
+
+        <div id = "hiddenMenu"></div>
+
+        <div class = "posterDiv">
+
+            <button class = "greenButton" onclick = "changePoster(-1);"><img src = "images/chevron-left.svg" alt = "Chevron left"></button>
+
+            <div id = "ticketButton">
+
+                <h1 id = posterName></h2>
+                    <button class = "greenButton"><img src = "images/buyButton.svg"></button>
+
+            </div><!--</div>-->
+
+            <button class = "greenButton" onclick = "changePoster(1);"><img src = "images/chevron-right.svg" alt = "Chevron right"></button>
+
+        </div><!--posterName-->
+
+    </div><!--hero-->
+
+</div><!--Wrapper-->
+
+
+ 
+    <script src = "script.js"></script>
+</body>
+</html>
