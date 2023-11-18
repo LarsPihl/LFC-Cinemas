@@ -167,7 +167,7 @@ body {
   .footer-inner-container {
     margin: 0 auto;
     flex-direction: row;
-    width: 900px;
+    width: 80%;
     justify-content: space-between;
   }
   .footer-signup {

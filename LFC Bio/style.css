@@ -33,14 +33,13 @@ body {
     justify-content: center;
     z-index: 1;
     background-color: var(--darkness);
-   
 }
 
 #logo {
-    position: absolute;
-    top: 2vw;
-    left: 8vw;
-    z-index: 3;
+  position: absolute;
+  top: 2vw;
+  left: 8vw;
+  z-index: 3;
 }
 
 .hero {
@@ -57,21 +56,21 @@ body {
 }
 
 .header {
-    width: inherit;
-    max-width: inherit;
-    position: fixed;
-    top: 3vh;
-    left: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 3;
+  width: inherit;
+  max-width: inherit;
+  position: fixed;
+  top: 3vh;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 3;
 }
 
 #navBar {
-    visibility: hidden;
-    height: 0px;
-    width: 0px;
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
 }
 
 .semiWide, .wide {
@@ -79,20 +78,20 @@ body {
 }
 
 .greenButton {
-    border: none;
-    background-color: transparent;
-   }
+  border: none;
+  background-color: transparent;
+}
 
 #hamburgerIcon {
-    visibility: visible;
-    position: absolute;
-    top: 2vw;
-    right: 10vw;
-    z-index: 3;
+  visibility: visible;
+  position: absolute;
+  top: 2vw;
+  right: 10vw;
+  z-index: 3;
 }
 
 #posterName {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 #hiddenMenu {
@@ -121,101 +120,97 @@ margin: 10px 0px;
       }
 
 .posterDiv {
-    max-width: inherit;
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  max-width: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .current {
-    max-width: inherit;
-    width: inherit;
-    height: 410px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  max-width: inherit;
+  width: inherit;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .movieHeader {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 10%;
-    
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 10%;
 }
 
 .line {
-    margin-top: -3%;
+  margin-top: -3%;
 }
 
 .current h2 {
-    font-size: 32px;
-    margin: 0vw 5vw;
+  font-size: 32px;
+  margin: 0vw 5vw;
 }
 
 .movieRow {
-    max-width: inherit;
-    width: inherit;
-    height: 267px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -5%;
+  max-width: inherit;
+  width: inherit;
+  height: 267px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -5%;
 }
 
 .movieRow .greenButton {
-    margin-top: -10%;
+  margin-top: -10%;
 }
 
 .posterAndName {
-    display: flex;
-    flex-direction: column;
-    width :167px;
-    height: 267px;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 167px;
+  height: 267px;
+  margin: 10px;
 }
 
 .poster {
-
-    width: 167px;
-    height: 245px;
-    border-radius: 5%;
-    border: 1px solid white;
+  width: 167px;
+  height: 245px;
+  border-radius: 5%;
+  border: 1px solid white;
 }
 
-
 .circles {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
 }
 
 .circles img {
-    margin: 0.5vw;
+  margin: 0.5vw;
 }
 
 #offers {
-    height: 605px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: inherit;
-    width: inherit;
-    margin-bottom: 5%;
+  height: 605px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: inherit;
+  width: inherit;
+  margin-bottom: 5%;
 }
 
 #erbjudande {
-    width: 85vw;
-    height: 245px;
-
+  width: 85vw;
+  height: 245px;
 }
 
 p {
@@ -225,14 +220,14 @@ p {
 }
 
 #studentOffer {
-    margin-top: 5%;
-    height: 360px;
-    width: 345px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #474747;
+  margin-top: 5%;
+  height: 360px;
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #474747;
 }
 
 #newsLetter {
