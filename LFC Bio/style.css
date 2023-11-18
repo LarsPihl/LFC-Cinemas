@@ -1,279 +1,212 @@
 body {
-    width: 100vw;
-    max-width: 576px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: #F3F3F3;
-
+  width: 100vw;
+  max-width: 576px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #f3f3f3;
 }
 
 #wrapper {
-    position: relative;
-    width: inherit;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    background-color: #323232;
-   
+  position: relative;
+  width: inherit;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: #323232;
 }
 
 #logo {
-    position: absolute;
-    top: 2vw;
-    left: 8vw;
-    z-index: 3;
+  position: absolute;
+  top: 2vw;
+  left: 8vw;
+  z-index: 3;
 }
 
 .hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: inherit;
-    max-width: inherit;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    height: 267px;
-    border-bottom: 5px solid #3B8E74;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  max-width: inherit;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  height: 267px;
+  border-bottom: 5px solid #3b8e74;
 }
 
 .header {
-    width: inherit;
-    max-width: inherit;
-    position: fixed;
-    top: 3vh;
-    left: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 3;
+  width: inherit;
+  max-width: inherit;
+  position: fixed;
+  top: 3vh;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 3;
 }
 
 #navBar {
-    visibility: hidden;
-    height: 0px;
-    width: 0px;
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
 }
 
 .greenButton {
-    border: none;
-    background-color: transparent;
-   }
+  border: none;
+  background-color: transparent;
+}
 
 #hamburgerIcon {
-    visibility: visible;
-    position: absolute;
-    top: 2vw;
-    right: 10vw;
-    z-index: 3;
+  visibility: visible;
+  position: absolute;
+  top: 2vw;
+  right: 10vw;
+  z-index: 3;
 }
 
 #posterName {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 #hiddenMenu {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 50vw;
-    background-color:#F3F3F3;
-    z-index: 4;
-    color: #323232;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 50vw;
+  background-color: #f3f3f3;
+  z-index: 4;
+  color: #323232;
 }
 
-#hiddenMenu nav{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+#hiddenMenu nav {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 #hiddenMenu button {
-    display: block;
+  display: block;
 }
 
 #hiddenMenu a {
-margin: 2%;
-        
-      }
-
-
-
+  margin: 2%;
+}
 
 .posterDiv {
-    max-width: inherit;
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  max-width: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .current {
-    max-width: inherit;
-    width: inherit;
-    height: 410px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  max-width: inherit;
+  width: inherit;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .movieHeader {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 10%;
-    
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 10%;
 }
 
 .line {
-    margin-top: -3%;
+  margin-top: -3%;
 }
 
 .current h2 {
-    font-size: 32px;
-    margin: 0vw 5vw;
+  font-size: 32px;
+  margin: 0vw 5vw;
 }
 
 .movieRow {
-    max-width: inherit;
-    width: inherit;
-    height: 267px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -5%;
+  max-width: inherit;
+  width: inherit;
+  height: 267px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -5%;
 }
 
 .movieRow .greenButton {
-    margin-top: -10%;
+  margin-top: -10%;
 }
 
 .posterAndName {
-    display: flex;
-    flex-direction: column;
-    width :167px;
-    height: 267px;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 167px;
+  height: 267px;
+  margin: 10px;
 }
 
 .poster {
-
-    width: 167px;
-    height: 245px;
-    border-radius: 5%;
-    border: 1px solid white;
+  width: 167px;
+  height: 245px;
+  border-radius: 5%;
+  border: 1px solid white;
 }
 
-
 .circles {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
 }
 
 .circles img {
-    margin: 0.5vw;
+  margin: 0.5vw;
 }
 
 #offers {
-    height: 605px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: inherit;
-    width: inherit;
-    margin-bottom: 5%;
+  height: 605px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: inherit;
+  width: inherit;
+  margin-bottom: 5%;
 }
 
 #erbjudande {
-    width: 85vw;
-    height: 245px;
-
+  width: 85vw;
+  height: 245px;
 }
 
 p {
-    font-size: 16px;
-    width: 304px;
+  font-size: 16px;
+  width: 304px;
 }
 
 #studentOffer {
-    margin-top: 5%;
-    height: 360px;
-    width: 345px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #474747;
-}
-
-@media screen and (min-width: 576px) {
-
-body {
-    max-width: 1440px;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    max-width: 1440px;
-    max-height: 600px;
-
-}
-
-.header {
-    position: relative;
-    width: 1184px;
-}
-
-.header h1 {
-    position: absolute;
-    top: 0vh;
-    left: 5px;
-}
-
-.posterDiv {
-    width: 1184px;
-    margin: 0px 64px;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: space-between;
-    margin-top: 20%;
-}
-
-#posterName {
-    color: #FFFFFF;
-}
-
-
-#navBar {
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-items: space-around;
-}
-
-.navbarItem {
-    margin-right: 1vw;
-}
-
+  margin-top: 5%;
+  height: 360px;
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #474747;
 }

@@ -1,0 +1,644 @@
+:root {
+  --pinegreen: #3b8e74;
+  --pearl: #f3f3f3;
+  --darkness: #323232;
+  --light-darkness: #595959;
+  --sand: #927250;
+  --swiper-pagination-color: #3b8e74;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--darkness);
+  color: var(--pearl);
+
+  font-family: "Hind Guntur", sans-serif;
+}
+
+#navBar {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-items: space-around;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--pinegreen);
+  color: var(--pearl);
+  font-family: "Work Sans", sans-serif;
+}
+.footer-container {
+  padding: 80px 25px;
+}
+.footer-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer-menu ul {
+  list-style: none;
+  font-size: 20px;
+}
+.footer-menu li {
+  padding: 10px 5px;
+}
+.footer-menu a {
+  text-decoration: none;
+  color: var(--pearl);
+}
+.footer-menu li:hover {
+  text-decoration: underline;
+}
+.button-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--pearl);
+  color: var(--darkness) !important;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+}
+.button-signup:hover {
+  background: var(--darkness);
+  color: var(--pearl) !important;
+  cursor: pointer;
+}
+.button-text {
+  padding-right: 10px;
+}
+.footer-menu li:hover {
+  text-decoration: underline;
+}
+.footer-signup {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--pearl);
+}
+.text-signup {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+}
+.app-and-social {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.app img {
+  width: 70%;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.fa-brands {
+  text-decoration: none;
+  color: var(--pearl);
+  font-size: 38px;
+  transition: all 200ms ease-in-out;
+}
+
+.fa-brands:hover {
+  color: var(--sand);
+}
+.copyright {
+  font-size: 14px;
+}
+.copyright {
+  margin-top: 50px;
+}
+#navBar {
+  display: none;
+}
+.nav {
+  padding: 14px 25px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.sticky-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hamburger-icon {
+  display: block;
+}
+.background-and-content {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-image: linear-gradient(
+      180deg,
+      rgba(35, 36, 44, 0.5) 0%,
+      rgba(35, 36, 44, 0.5) 100%
+    ),
+    url(https://www.hollywoodreporter.com/wp-content/uploads/2023/07/TM_Payoff_1-Sht_Printed_v7_lg-H-2023.jpg?w=1296);
+  margin: -106px 0px 100px 0px;
+  height: 40vh;
+  border-bottom: 5px solid #3b8e74;
+}
+
+.absolute-container {
+  display: flex;
+  position: absolute;
+  bottom: -82px;
+  left: 24px;
+  right: 24px;
+  justify-content: flex-start;
+  width: auto;
+  height: 200px;
+}
+.image-poster img {
+  height: 100%;
+}
+
+.genre,
+.age,
+.time {
+  padding-right: 10px;
+}
+
+.title .text {
+  color: var(--pearl);
+  text-align: left;
+  font-family: Hind Guntur;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.small-text,
+.director {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+}
+
+.information {
+  padding: 30px 0px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.big-button-link {
+  color: var(--pearl) !important;
+  text-decoration: none;
+}
+.big-button {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: var(--pinegreen);
+}
+.big-button:hover {
+  background-color: var(--sand);
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.title .text {
+  padding-right: 10px;
+}
+
+.movie-text {
+  padding: 29px 24px;
+  text-align: left;
+}
+
+.title-small {
+  font-family: Hind Guntur;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+
+body > div.movie-text > div:nth-child(3) {
+  padding-top: 15px;
+}
+
+.text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.showing-container {
+  padding: 48px 24px;
+}
+.showing-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.showing-header .title-small {
+  padding-bottom: 0px;
+}
+.dates {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.dates .date-option:hover {
+  cursor: pointer;
+  color: var(--sand);
+}
+.booking {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px var(--pearl) solid;
+  align-items: center;
+}
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  padding-bottom: 5px;
+}
+
+.booking:nth-child(n + 3) {
+  padding-top: 10px;
+}
+
+.book-button {
+  display: flex;
+  width: 90px;
+  height: 33px;
+  padding: 10px 12px 9px 16px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: var(--pinegreen);
+}
+.book-button:hover {
+  cursor: pointer;
+  background: var(--sand);
+}
+
+.showing-container .divider:nth-last-child(2) {
+  display: none;
+}
+.showing-container .date-option:nth-last-child(3) {
+  display: none;
+}
+
+#hiddenMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 60vw;
+  background-color: var(--pinegreen);
+  gap: 30px;
+  z-index: 4;
+  border-radius: 0px 0px 20px 0px;
+}
+
+#hiddenMenu #logo {
+  padding: 30px;
+}
+
+#hiddenMenu > a:nth-child(4) {
+  padding-bottom: 20px;
+}
+
+#hiddenMenu nav {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#hiddenMenu button {
+  display: block;
+}
+
+#hiddenMenu a {
+  color: var(--pearl);
+  cursor: pointer;
+}
+
+#hiddenMenu .icon-link:hover {
+  color: var(--sand);
+}
+
+#hiddenMenu nav a:hover {
+  text-decoration: underline;
+}
+
+.actor-carousel,
+.image-carousel {
+  width: 100%;
+  position: relative;
+  padding: 24px;
+}
+
+.actor-carousel .swiper {
+  padding: 5px;
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+.image-carousel .swiper {
+  padding: 5px;
+  width: 100%;
+  height: 210px;
+  border-radius: 2px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-carousel img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.actor-carousel img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.swiper-button-nxt {
+  background: var(--pinegreen);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-21%, -50%);
+
+  color: var(--pearl);
+  font-size: 12px;
+  z-index: 1;
+}
+.swiper-button-prv {
+  background: var(--pinegreen);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(21%, -50%);
+  top: 50%;
+  left: 0;
+  color: var(--pearl);
+  font-size: 12px;
+  z-index: 1;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: -10px !important;
+}
+
+.actor-card {
+  border-radius: 10px;
+  background: var(--light-darkness);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.actor-card img {
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.actor-card .actor-name {
+  font-size: 16px;
+  font-weight: 400;
+}
+.actor-card .character-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.actor-title {
+  padding: 24px 24px 0px 24px;
+}
+.actor-title .title-small {
+  padding-bottom: 0px;
+}
+
+svg path:hover {
+  fill: var(--pinegreen) !important;
+  cursor: pointer;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@media (min-width: 768px) {
+  .hamburger-icon {
+    display: none;
+  }
+  .footer-container {
+    padding: 50px 64px;
+  }
+  .footer-inner-container {
+    margin: 0 auto;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .footer-signup {
+    justify-content: flex-start;
+    width: 33%;
+  }
+  .fa-brands {
+    font-size: 28px;
+  }
+  .app img {
+    width: 100%;
+  }
+  .footer-menu ul {
+    list-style: none;
+    font-size: 16px;
+  }
+  .copyright {
+    margin-top: 60px;
+  }
+  #navBar {
+    display: flex;
+  }
+  .image-carousel img {
+    object-position: 10% 30%;
+  }
+  .actor-card img {
+    object-position: 50% 50%;
+  }
+  #navBar a {
+    padding: 0px 10px;
+    color: var(--pearl);
+  }
+  #navBar a:hover {
+    color: var(--sand);
+    cursor: pointer;
+  }
+  .showing-container .divider:nth-last-child(2) {
+    display: block;
+  }
+  .showing-container .date-option:nth-last-child(3) {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .showing-container {
+    width: 685px;
+    margin: 0 auto;
+  }
+  .actor-carousel {
+    width: 685px;
+    margin: 0 auto;
+  }
+  .actor-title {
+    width: 685px;
+    margin: 0 auto;
+  }
+  .image-carousel {
+    width: 685px;
+    margin: 0 auto;
+  }
+  .movie-text {
+    padding: 24px;
+    width: 685px;
+    margin: 0 auto;
+  }
+
+  .absolute-container {
+    bottom: -50px;
+    position: relative;
+    height: 214px;
+    left: 0;
+  }
+  .footer-inner-container {
+    width: 50%;
+  }
+  .image-carousel .swiper {
+    padding: 0px;
+  }
+  .information {
+    flex-direction: row;
+    width: 685px;
+    padding: 40px 24px;
+    align-items: flex-start;
+  }
+
+  .background-and-content {
+    margin: -106px 0px 0px 0px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .image-poster {
+    position: absolute;
+    /* width: 200px; */
+    height: 300px;
+    left: -240px;
+  }
+  .information .text {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .information .small-text,
+  .director {
+    padding-left: 2px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  #navBar {
+    justify-content: space-between;
+  }
+
+  #navBar a {
+    padding: 0px 10px;
+    color: var(--pearl);
+  }
+  #navBar a:hover {
+    color: var(--sand);
+    cursor: pointer;
+  }
+}
