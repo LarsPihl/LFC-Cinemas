@@ -28,7 +28,9 @@ comingPosterImage = document.getElementsByClassName("comingPosterImage"), coming
 
             for (let i = 0; i < posterClass.length; i++) {
                 var temp = rand + i;
-                if (temp >= maxNum) temp = 0;
+                if (temp >= maxNum) {rand = 0-i;
+                    temp = 0;
+                }
                 imageClass[i].src = objectArray[temp].poster;
             posterClass[i].innerHTML= objectArray[temp].title;
             }
