@@ -1,3 +1,17 @@
+:root {
+  --pinegreen: #3b8e74;
+  --pearl: #f3f3f3;
+  --darkness: #323232;
+  --light-darkness: #595959;
+  --sand: #927250;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
     width: 100vw;
     max-width: 576px;
@@ -5,8 +19,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    color: #F3F3F3;
+    background-color: var(--darkness);
+    color: var(--pearl);
 
 }
 
@@ -18,7 +32,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1;
-    background-color: #323232;
+    background-color: var(--darkness);
    
 }
 
@@ -39,7 +53,7 @@ body {
     justify-content: center;
     z-index: 2;
     height: 267px;
-    border-bottom: 5px solid #3B8E74;
+    border-bottom: 5px solid var(--pinegreen);
 }
 
 .header {
@@ -58,6 +72,10 @@ body {
     visibility: hidden;
     height: 0px;
     width: 0px;
+}
+
+.semiWide, .wide {
+  display: none !important;
 }
 
 .greenButton {
@@ -82,30 +100,25 @@ body {
     top: 0px;
     left: 0px;
     width: 50vw;
-    background-color:#F3F3F3;
+    background-color:var(--pearl);
     z-index: 4;
-    color: #323232;
-}
-
-#hiddenMenu nav{
-    height: 300px;
+    color: var(--darkness);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+
+    
 }
 
 #hiddenMenu button {
     display: block;
+    margin: 10px 0px;
 }
 
 #hiddenMenu a {
-margin: 2%;
+margin: 10px 0px;
         
       }
-
-
-
 
 .posterDiv {
     max-width: inherit;
@@ -208,6 +221,7 @@ margin: 2%;
 p {
     font-size: 16px;
     width: 304px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #studentOffer {
@@ -221,30 +235,151 @@ p {
     background-color: #474747;
 }
 
+#newsLetter {
+    width: inherit;
+    max-width: inherit;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#newsLetter h2 {
+    font-size: 32px;
+    width: 300px;
+}
+
+#newsLetter input {
+    margin: -20px 0px;
+    width: 339px;
+    height: 50px;
+    border-radius: 20px;
+    color: #323232;
+   font-size: 16px;
+   padding-left: 10px;
+}
+
+.footer {
+    background-color: var(--pinegreen);
+    color: var(--pearl);
+    font-family: "Work Sans", sans-serif;
+  }
+  .footer-container {
+    padding: 80px 25px;
+  }
+  .footer-inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-menu ul {
+    list-style: none;
+    font-size: 20px;
+  }
+  .footer-menu li {
+    padding: 10px 5px;
+  }
+  .footer-menu a {
+    text-decoration: none;
+    color: var(--pearl);
+  }
+  .footer-menu li:hover {
+    text-decoration: underline;
+  }
+  .button-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--pearl);
+    color: var(--darkness) !important;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+  }
+  .button-signup:hover {
+    background: var(--darkness);
+    color: var(--pearl) !important;
+    cursor: pointer;
+  }
+  .button-text {
+    padding-right: 10px;
+  }
+  .footer-menu li:hover {
+    text-decoration: underline;
+  }
+  .footer-signup {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--pearl);
+  }
+  .text-signup {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+  }
+  .app-and-social {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .app img {
+    width: 70%;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .fa-brands {
+    text-decoration: none;
+    color: var(--pearl);
+    font-size: 38px;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .fa-brands:hover {
+    color: var(--sand);
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .copyright {
+    margin-top: 50px;
+  }
+
 @media screen and (min-width: 576px) {
 
-body {
-    max-width: 1440px;
+body, #wrapper {
+    max-width: 1000px;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
-    position: relative;
-    max-width: 1440px;
+    max-width: inherit;
     max-height: 600px;
+    height: calc(100vw/1.4);
 
 }
 
 .header {
-    position: relative;
-    width: 1184px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: inherit;
+    max-width: inherit;
+    height: 100px;
 }
 
-.header h1 {
+#logo {
     position: absolute;
-    top: 0vh;
-    left: 5px;
+    top: 15px;
+    left: 15px;
 }
 
 .posterDiv {
@@ -261,19 +396,69 @@ body {
     color: #FFFFFF;
 }
 
-
-#navBar {
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-items: space-around;
-}
-
-.navbarItem {
-    margin-right: 1vw;
+.semiWide {
+  display: inherit !important;
 }
 
 }
+
+@media (min-width: 1000px) {
+
+  .wide {
+    display: inherit !important;
+  }
+
+    #navBar, #hamburgerIcon, #hiddenMenu {
+        position: absolute;
+        width: 50vw;
+        top: 15px;
+        right: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        visibility: visible;
+        justify-content: space-evenly;
+    }
+
+    #hamburgerIcon, #hiddenMenu {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    body, #wrapper {
+        max-width: 1440px;
+    }
+
+.hero {
+    max-width: inherit;
+
+}
+
+    .footer-container {
+      padding: 50px 64px;
+    }
+    .footer-inner-container {
+      margin: 0 auto;
+      flex-direction: row;
+      width: 900px;
+      justify-content: space-between;
+    }
+    .footer-signup {
+      justify-content: flex-start;
+      width: 33%;
+    }
+    .fa-brands {
+      font-size: 28px;
+    }
+    .app img {
+      width: 100%;
+    }
+    .footer-menu ul {
+      list-style: none;
+      font-size: 16px;
+    }
+    .copyright {
+      margin-top: 60px;
+    }
+  }
