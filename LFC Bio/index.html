@@ -26,12 +26,13 @@
 
             <nav id = "navBar">
                 
+                    <a class = "navbarItem">Link to our Movie Page</a>
                     <a class = "navbarItem">Movies</a>
                     <a class = "navbarItem">Offers</a>
                     <a class = "navbarItem">Buy a Ticket</a>
                
-                <button class = "navbarItem">My pages</button>
-                <button class = "navbarItem">Search</button>
+                <button class = "navbarItem"><span id = "altText">My Pages</span><img src ="images/myPages.svg" alt = "My Pages"></button>
+                <button class = "navbarItem"><span id = "altText">Search</span><img src ="images/search.svg" alt = "Search"></button>
                 
             </nav>
 
@@ -57,7 +58,7 @@
 
     <div class= "current">
         <div class = "movieHeader">
-        <div class = "line">_______________</div><h2>Films</h2><div class="line">_______________</div>
+        <div class = "line">_______________</div><h2>Current Movies</h2><div class="line">_______________</div>
         </div>
         <div class = "movieRow">
         <button class = "greenButton" onclick = "changeCurrent(-1, posterh4, posterImage);"><img src = "images/chevron-left.svg" alt = "Chevron left"></button>
@@ -103,8 +104,8 @@
 
         <div id = "studentOffer">
             <h2>Student Offer</h2>
-            <p>Buy 2 movie tickets simultaneously and get a large Popcorn and soda for free.<br><br>
-                The offer expires at 31/12-2023.
+            <p>Get a large popcorn and drink when you buy more than two tickets at the same time! <br><br>
+                Valid until 19/11
             </p>
             <img src = "images/readMore.svg" alt = "Read More">
         </div>
@@ -147,6 +148,7 @@
 
     <div id = "newsLetter">
         <h2>Sign up for our Newsletter!</h2>
+        <p>Sign up for our newsletter for exclusive offers, early screening events and epic film news!</p>
         <input type="email" placeholder="Enter your Email">
         <img src = "images/signUp.svg" alt = "Buy Button">
 
@@ -176,7 +178,7 @@
     </div>
         <div class="app-and-social">
             <div class="app">
-                <img src="/images/appstore.png" alt="">
+                <img src="images/appstore.png" alt="">
             </div>
 
             <div class="social">

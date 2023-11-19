@@ -33,13 +33,14 @@ body {
     justify-content: center;
     z-index: 1;
     background-color: var(--darkness);
+   
 }
 
 #logo {
-  position: absolute;
-  top: 2vw;
-  left: 8vw;
-  z-index: 3;
+    position: absolute;
+    top: 2vw;
+    left: 8vw;
+    z-index: 3;
 }
 
 .hero {
@@ -56,42 +57,45 @@ body {
 }
 
 .header {
-  width: inherit;
-  max-width: inherit;
-  position: fixed;
-  top: 3vh;
-  left: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  z-index: 3;
+    width: inherit;
+    max-width: inherit;
+    position: fixed;
+    top: 3vh;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
 }
 
 #navBar {
-  visibility: hidden;
-  height: 0px;
-  width: 0px;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
 }
 
-.semiWide, .wide {
+.semiWide, .wide, #newsLetter p {
   display: none !important;
 }
 
 .greenButton {
-  border: none;
-  background-color: transparent;
-}
+    border: none;
+    background-color: transparent;
+    padding-top: 5%;
+   }
+
+  
 
 #hamburgerIcon {
-  visibility: visible;
-  position: absolute;
-  top: 2vw;
-  right: 10vw;
-  z-index: 3;
+    visibility: visible;
+    position: absolute;
+    top: 2vw;
+    right: 10vw;
+    z-index: 3;
 }
 
 #posterName {
-  margin-bottom: 1%;
+    margin-bottom: 1%;
 }
 
 #hiddenMenu {
@@ -109,108 +113,117 @@ body {
     
 }
 
-#hiddenMenu button {
-    display: block;
+#hiddenMenu button, #hiddenMenu a{
     margin: 10px 0px;
+    border: none;
 }
 
-#hiddenMenu a {
-margin: 10px 0px;
-        
-      }
+.navbarItem img {
+  display: none;
+  margin-top: -8px;
+}
 
 .posterDiv {
-  max-width: inherit;
-  width: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    max-width: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
 }
 
 .current {
-  max-width: inherit;
-  width: inherit;
-  height: 410px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    max-width: inherit;
+    width: inherit;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
 }
 
 .movieHeader {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 10%;
+    
 }
 
 .line {
-  margin-top: -3%;
+    margin-top: -3%;
 }
 
 .current h2 {
-  font-size: 32px;
-  margin: 0vw 5vw;
+    font-size: 32px;
+    margin: 0vw 5vw;
 }
 
 .movieRow {
-  max-width: inherit;
-  width: inherit;
-  height: 267px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: -5%;
+    max-width: inherit;
+    width: inherit;
+    height: 267px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5%;
 }
 
 .movieRow .greenButton {
-  margin-top: -10%;
+    margin-top: -10%;
 }
 
 .posterAndName {
-  display: flex;
-  flex-direction: column;
-  width: 167px;
-  height: 267px;
-  margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width :167px;
+    height: 267px;
+    margin: 10px;
 }
 
 .poster {
-  width: 167px;
-  height: 245px;
-  border-radius: 5%;
-  border: 1px solid white;
+
+    width: 167px;
+    height: 245px;
+    border-radius: 5%;
+    border: 1px solid white;
+}
+
+.posterh4 {
+  margin-top: 5px;
 }
 
 .circles {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
 }
 
 .circles img {
-  margin: 0.5vw;
+    margin: 0.5vw;
 }
 
 #offers {
-  height: 605px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: inherit;
-  width: inherit;
-  margin-bottom: 5%;
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: inherit;
+    width: inherit;
+    margin-bottom: 5%;
 }
 
 #erbjudande {
-  width: 85vw;
-  height: 245px;
+    width: 85vw;
+    height: 245px;
+
 }
 
 p {
@@ -220,14 +233,14 @@ p {
 }
 
 #studentOffer {
-  margin-top: 5%;
-  height: 360px;
-  width: 345px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #474747;
+    margin-top: 5%;
+    height: 360px;
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #474747;
 }
 
 #newsLetter {
@@ -359,6 +372,7 @@ body, #wrapper {
     max-width: inherit;
     max-height: 600px;
     height: calc(100vw/1.4);
+    margin-bottom: 10%;
 
 }
 
@@ -377,33 +391,39 @@ body, #wrapper {
     left: 15px;
 }
 
-.posterDiv {
-    width: 1184px;
-    margin: 0px 64px;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: space-between;
-    margin-top: 20%;
+.current {
+  margin-top: 8%;
 }
 
-#posterName {
-    color: #FFFFFF;
+.movieRow  {
+  margin-top: -2.5%;
+}
+
+#newsLetter {
+  margin-top: 5%;
 }
 
 .semiWide {
   display: inherit !important;
 }
 
+.greenButton {
+  padding-top: 7.5%;
+}
+
+.circles {
+  margin-top: 7.5%;
+}
+
 }
 
 @media (min-width: 1000px) {
 
-  .wide {
+  .wide, #newsLetter p {
     display: inherit !important;
   }
 
-    #navBar, #hamburgerIcon, #hiddenMenu {
+    #navBar {
         position: absolute;
         width: 50vw;
         top: 15px;
@@ -415,7 +435,20 @@ body, #wrapper {
         justify-content: space-evenly;
     }
 
-    #hamburgerIcon, #hiddenMenu {
+    #navBar img {
+      display: flex;
+    }
+
+    #altText {
+      display: none;
+    }
+
+    #navBar button {
+    background-color: transparent;
+    border: none;
+    }
+
+    #hamburgerIcon, #hiddenMenu, #altText {
         visibility: hidden;
         width: 0px;
         height: 0px;
@@ -428,6 +461,68 @@ body, #wrapper {
 .hero {
     max-width: inherit;
 
+}
+
+.posterDiv {
+  font-size: 42px;
+}
+
+#posterName {
+    margin-bottom: -20px;
+}
+
+#offers {
+  position: relative;
+  width: inherit;
+  max-width: inherit;
+}
+
+#offers .movieHeader {
+    position: absolute;
+    top: 0px;
+}
+
+
+
+#offers .movieRow {
+  margin: 0px;
+  position: absolute;
+left:-15%;
+}
+#offers #studentOffer {
+  margin: 0px;
+  position: absolute;
+  height: 247px;
+  left: 50%;
+}
+
+
+
+#newsLetter {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  width: inherit;
+  max-width: inherit;
+}
+
+
+#newsLetter h2, #newsLetter p {
+  width: inherit;
+  max-width: inherit;
+  grid-column: 1/-1;
+}
+
+#newsLetter p {
+  margin-top: -5%;
+}
+
+#newsLetter input {
+  margin-top: -30%;
+  grid-column: 3/5;
+}
+
+#newsLetter img {
+  margin-top: -50%;
 }
 
     .footer-container {
