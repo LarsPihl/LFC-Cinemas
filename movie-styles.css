@@ -69,7 +69,7 @@ body {
   transition: all 200ms ease-in-out;
 }
 .button-signup:hover {
-  background: var(--darkness);
+  background: var(--sand);
   color: var(--pearl) !important;
   cursor: pointer;
 }
