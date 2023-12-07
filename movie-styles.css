@@ -335,6 +335,7 @@ body > div.movie-text > div:nth-child(3) {
   gap: 30px;
   z-index: 4;
   border-radius: 0px 0px 20px 0px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 #hiddenMenu #logo {
