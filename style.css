@@ -40,8 +40,8 @@ body {
 
 #logo {
     position: absolute;
-    top: 2vw;
-    left: 8vw;
+    top: 3px;
+    left: 25px;
     z-index: 3;
 }
 
@@ -88,11 +88,15 @@ body {
 
   
 
+   #logo, #hamburgerIcon {
+    margin-top: 0px;
+   }
+
 #hamburgerIcon {
     visibility: visible;
     position: absolute;
-    top: 2vw;
-    right: 10vw;
+    top: -5px;
+    right: 40px;
     z-index: 3;
 }
 
@@ -101,33 +105,69 @@ body {
 }
 
 #hiddenMenu {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 50vw;
-    background-color:var(--pearl);
-    z-index: 4;
-    color: var(--darkness);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 60vw;
+  background-color: var(--pinegreen);
+  gap: 30px;
+  z-index: 4;
+  border-radius: 0px 0px 20px 0px;
+  text-align: center;
 }
 
-#hiddenMenu button, #hiddenMenu a{
-    margin: 10px 0px;
-    border: none;
+#hiddenLogo {
+  margin: 0px;
+  padding: 30px 0px;
 }
 
-.navbarItem {
-  margin-right: 2vw;
+#hiddenMenu #myPages {
+ margin-bottom: 10px;
 }
 
-.navbarItem img {
+
+#hiddenMenu nav a:hover, nav a:hover {
+  text-decoration: underline;
+  color: var(--sand);
+}
+
+#hiddenMenu nav {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+#hiddenMenu button{
+   display: block;
+   border: none;
+   background-color: transparent;
+}
+
+#hiddenMenu:last-child {
+ margin-bottom: 50px;
+}
+
+#hiddenMenu a {
+  color: var(--pearl);
+  cursor: pointer;
+}
+
+
+#navBar .navbarItem {
+  margin-right: 1.5vw;
+}
+
+/*.navbarItem img {
   display: none;
   margin-top: -8px;
-}
+}*/
 
 .posterDiv {
     max-width: inherit;
@@ -157,6 +197,11 @@ body {
     align-items: center;
     margin-bottom: 10%;
     
+}
+
+nav a, #hiddenMenu {
+  font-family: "work-sans", sans-serif;
+  font-size: 15px;
 }
 
 .line {
@@ -223,7 +268,7 @@ body {
     align-items: center;
     max-width: inherit;
     width: inherit;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 #erbjudande {
@@ -277,6 +322,7 @@ p {
 
 .footer {
     background-color: var(--pinegreen);
+    text-align: ce;
     color: var(--pearl);
     font-family: "Work Sans", sans-serif;
   }
@@ -343,7 +389,7 @@ p {
     gap: 60px;
   }
   .app img {
-    width: 70%;
+    width: 50%;
   }
   .social {
     display: flex;
@@ -368,6 +414,43 @@ p {
   }
 
 @media screen and (min-width: 768px) {
+
+  #navBar {
+    position: absolute;
+    width: 50vw;
+    top: 8px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    visibility: visible;
+    justify-content: flex-end;
+    font-weight: lighter;
+}
+
+#navBar img {
+  display: flex;
+  margin-top: 2px;
+}
+
+#altText {
+  display: none;
+}
+
+#navBar button {
+background-color: transparent;
+border: none;
+}
+
+#hamburgerIcon, #hiddenMenu, #altText {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+  #logo {
+    top: 14px;
+  }
 
 body, #wrapper {
     max-width: 100vw;
@@ -394,8 +477,8 @@ body, #wrapper {
 
 #logo {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 14px;
+    left: 25px;
 }
 
 .current {
@@ -410,9 +493,6 @@ body, #wrapper {
   margin-top: 0px;
 }
 
-#offers {
-  margin-bottom: -2%;
-}
 
 .semiWide {
   display: inherit !important;
@@ -426,6 +506,33 @@ body, #wrapper {
   margin-top: 7.5%;
 }
 
+.footer-container {
+  padding: 50px 64px;
+}
+.footer-inner-container {
+  margin: 0 auto;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+.footer-signup {
+  justify-content: flex-start;
+  width: 33%;
+}
+.fa-brands {
+  font-size: 28px;
+}
+.app img {
+  width: 100%;
+}
+.footer-menu ul {
+  list-style: none;
+  font-size: 16px;
+}
+.copyright {
+  margin-top: 60px;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -436,36 +543,7 @@ body, #wrapper {
     display: inherit !important;
   }
 
-    #navBar {
-        position: absolute;
-        width: 50vw;
-        top: 15px;
-        right: 15px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        visibility: visible;
-        justify-content: flex-end;
-    }
 
-    #navBar img {
-      display: flex;
-    }
-
-    #altText {
-      display: none;
-    }
-
-    #navBar button {
-    background-color: transparent;
-    border: none;
-    }
-
-    #hamburgerIcon, #hiddenMenu, #altText {
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-    }
 
 
 .hero {
@@ -492,7 +570,7 @@ body, #wrapper {
 
 #offers .movieHeader {
     position: absolute;
-    top: 0px;
+    top: -15px;
 }
 
 
@@ -546,32 +624,10 @@ height: 247px;
   margin-top: -50%;
 }
 
-    .footer-container {
-      padding: 50px 64px;
-    }
-    .footer-inner-container {
-      margin: 0 auto;
-      flex-direction: row;
-      width: 900px;
-      justify-content: space-between;
-    }
-    .footer-signup {
-      justify-content: flex-start;
-      width: 33%;
-    }
-    .fa-brands {
-      font-size: 28px;
-    }
-    .app img {
-      width: 100%;
-    }
-    .footer-menu ul {
-      list-style: none;
-      font-size: 16px;
-    }
-    .copyright {
-      margin-top: 60px;
-    }
+.footer-inner-container {
+  width: 50%;
+}
+
   }
 
   
@@ -580,6 +636,9 @@ height: 247px;
 
   @media (min-width: 1400px) {
 
+    #offers {
+      margin-bottom: -12%;
+    }
 
     #erbjudande, #offers #studentOffer  {
       margin-bottom: 4%;
@@ -592,19 +651,38 @@ height: 247px;
     }
 
     #offers #studentOffer  {
-      margin-top: -45px;
+      margin-top: -50px;
       margin-left: 60px;
     }
 
     #erbjudande {
       margin-right: -60px;
     }
-    
-
-
-   
-
    
   }
 
-  
+  @media (min-width: 2000px) {
+
+   
+    #offers #studentOffer  {
+      margin-top: -30px;
+  }
+
+  #erbjudande {
+    margin-top: 25px;
+  }
+
+  #offers {
+    margin-bottom: -10%;
+  }
+
+}
+
+@media (min-width: 2500px) {
+
+#erbjudande {
+  margin-top: 35px;
+}
+}
+
+

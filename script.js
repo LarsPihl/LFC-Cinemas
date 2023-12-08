@@ -12,7 +12,8 @@ comingMovies = [
 posterName = document.getElementById("posterName"), poster = document.getElementsByClassName("hero")[0] ,posterImage = document.getElementsByClassName("currentPoster"), posterh4 = document.getElementsByClassName("currenth4"),
 maxNum = currentMovies.length, maxNumberOfComingMovies = comingMovies.length, randomNumber = Math.floor(Math.random() * maxNum), randomNumberForPoster = Math.floor(Math.random() * maxNum), 
 randomNumberForUpcoming = Math.floor(Math.random() * maxNumberOfComingMovies), posterArea = document.getElementsByClassName("posterAndName"),
-comingPosterImage = document.getElementsByClassName("comingPosterImage"), comingh4 = document.getElementsByClassName("comingh4"), comingPosters = document.getElementsByClassName("comingPosters");
+comingPosterImage = document.getElementsByClassName("comingPosterImage"), comingh4 = document.getElementsByClassName("comingh4"), comingPosters = document.getElementsByClassName("comingPosters"),
+changeColorImages = document.getElementsByClassName("changeColor")
 ;
 
         posterName.innerHTML = currentMovies[0].title;
@@ -22,7 +23,33 @@ comingPosterImage = document.getElementsByClassName("comingPosterImage"), coming
         generatePosters(posterh4, posterImage, maxNum, currentMovies, randomNumberForPoster);
         generatePosters(comingh4, comingPosterImage, maxNumberOfComingMovies, comingMovies, randomNumberForUpcoming);
 
+        addEventListeners();
+
+       
+
 /*----------------------------------------------------------------------------------------------------------------*/ 
+
+    function addEventListeners() {
+    for (let i = 0; i < changeColorImages.length; i++) {
+    changeColorImages[i].addEventListener("mouseover", changeColor);
+    changeColorImages[i].para = i;
+    changeColorImages[i].addEventListener("mouseleave", changeColor2);
+    }
+}
+
+
+function changeColor(event) {
+    if (event.target.para == 0 || event.target.para == 2)
+event.target.src = "images/myPages2.svg";
+else event.target.src = "images/search2.svg";
+}
+
+function changeColor2(event) {
+    if (event.target.para == 0 || event.target.para == 2)
+event.target.src = "images/myPages.svg";
+else event.target.src = "images/search.svg";
+}
+        
 
         function generatePosters (posterClass, imageClass, numberOfItems, objectArray, rand) {
 
@@ -88,8 +115,17 @@ comingPosterImage = document.getElementsByClassName("comingPosterImage"), coming
         }//function changePoster
 
         function changeMenu() {
-            let menu = document.getElementById("hiddenMenu").innerHTML;
+            let menu = document.getElementById("hiddenMenu");
             let originalMenu = document.getElementById("navBar").innerHTML;
-            if (menu.length == 0) return originalMenu;
-            else return "";
-        }//changeMenu
+            let image = document.getElementById("logo").innerHTML;
+          
+            if (menu.innerHTML.length == 0) {
+                menu.style.paddingBottom = "30px";
+              return (
+                '<img id="hiddenLogo" src="images/Logo.svg" alt="LFC Bio" />' + originalMenu
+              );
+            } else{
+                menu.style.paddingBottom = "0px";
+                return "";
+            }
+          }

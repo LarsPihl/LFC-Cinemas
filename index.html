@@ -24,20 +24,20 @@
 
             <img id = "logo" src = "images/Logo.svg" alt = "LFC Bio">
 
-            <nav id = "navBar">
-                
+            <div id = "navBar">
+                <nav>
                     <a class = "navbarItem">Movies</a>
                     <a class = "navbarItem">Offers</a>
                     <a class = "navbarItem">Buy a Ticket</a>
-               
-                <button class = "navbarItem"><span id = "altText">My Pages</span><img src ="images/myPages.svg" alt = "My Pages"></button>
-                <button class = "navbarItem"><span id = "altText">Search</span><img src ="images/search.svg" alt = "Search"></button>
+                </nav>
+                <button class = "navbarItem"><!--<span id = "altText">My Pages</span>--><img id = "myPages" class = "changeColor" src ="images/myPages.svg" alt = "My Pages"></button>
+                <button class = "navbarItem"><!--<span id = "altText">Search</span>--><img class = "changeColor" src ="images/search.svg" alt = "Search"></button>
                 
-            </nav>
+            </div>
 
         <div id = "hamburgerIcon">
 
-        <a href="javascript:void(0);" class="icon" onclick="document.getElementById('hiddenMenu').innerHTML = changeMenu();">
+        <a href="javascript:void(0);" class="icon" onclick="document.getElementById('hiddenMenu').innerHTML = changeMenu(), addEventListeners();">
            <img src = "images/hamburger.svg" alt = "Hamburger Menu">
           </a>
 
