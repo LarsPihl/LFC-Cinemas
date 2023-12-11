@@ -13,7 +13,8 @@ posterName = document.getElementById("posterName"), poster = document.getElement
 maxNum = currentMovies.length, maxNumberOfComingMovies = comingMovies.length, randomNumber = Math.floor(Math.random() * maxNum), randomNumberForPoster = Math.floor(Math.random() * maxNum), 
 randomNumberForUpcoming = Math.floor(Math.random() * maxNumberOfComingMovies), posterArea = document.getElementsByClassName("posterAndName"),
 comingPosterImage = document.getElementsByClassName("comingPosterImage"), comingh4 = document.getElementsByClassName("comingh4"), comingPosters = document.getElementsByClassName("comingPosters"),
-changeColorImages = document.getElementsByClassName("changeColor")
+changeColorImages = document.getElementsByClassName("changeColor"), buyButton = document.getElementById("buy"), readButton = document.getElementById("read"),
+signButton = document.getElementById("sign")
 ;
 
         posterName.innerHTML = currentMovies[0].title;
@@ -26,7 +27,6 @@ changeColorImages = document.getElementsByClassName("changeColor")
         addEventListeners();
 
        
-
 /*----------------------------------------------------------------------------------------------------------------*/ 
 
     function addEventListeners() {
@@ -35,6 +35,24 @@ changeColorImages = document.getElementsByClassName("changeColor")
     changeColorImages[i].para = i;
     changeColorImages[i].addEventListener("mouseleave", changeColor2);
     }
+    buyButton.addEventListener("mouseover", changeButton);
+    buyButton.addEventListener("mouseleave", changeButton2);
+    readButton.addEventListener("mouseover", changeButton);
+    readButton.addEventListener("mouseleave", changeButton2);
+    signButton.addEventListener("mouseover", changeButton);
+    signButton.addEventListener("mouseleave", changeButton2);
+}
+
+function changeButton() {
+    if (this.id == "buy") this.src = "images/buyButton2.svg";
+    else if (this.id == "read") this.src = "images/readMore2.svg";
+    else if (this.id == "sign") this.src = "images/signUp2.svg";
+}
+
+function changeButton2() {
+    if (this.id == "buy") this.src = "images/buyButton.svg";
+    else if (this.id == "read") this.src = "images/readMore.svg";
+    else if (this.id == "sign") this.src = "images/signUp.svg";
 }
 
 
